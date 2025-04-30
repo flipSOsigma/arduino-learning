@@ -15,13 +15,16 @@ void loop() {
   }else{
     digitalWrite(2, LOW);
   }
+
   Serial.print(jam);
   Serial.print(":");
   Serial.print(menit);
   Serial.print(":");
   Serial.println(detik);
+
   detik++;
   delay(10);
+  
   if (detik == 60){
     menit++;
     detik = 0;
